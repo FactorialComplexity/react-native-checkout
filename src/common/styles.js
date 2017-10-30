@@ -12,8 +12,8 @@ export const touchableOpacityContainer = {
 }
 
 export const innerTouchableOpacityContainer = {
-  borderBottomWidth: StyleSheet.hairlineWidth,
-  borderColor: grey,
-  paddingBottom: 12,
-  paddingTop: 12,
+  borderBottomWidth: 1,
+  borderColor: "#d7d7d7",
+  paddingBottom: 22,
+  paddingTop: 22,
 }

@@ -15,7 +15,7 @@ export default props => (
       <View style={{
         position: 'absolute',
         top: 0,
-        right: 0,
+        right: -10,
         bottom: 0,
         width: 44,
         justifyContent: 'center',
@@ -24,7 +24,7 @@ export default props => (
         <Image style={{tintColor: 'rgba(0,122,255,1)', alignSelf: 'center'}} source={require('../../../assets/images/icon_checkmark.png')} />
       </View>
       :
-    	null
+      null
     }
   </TouchableOpacity>
 )
