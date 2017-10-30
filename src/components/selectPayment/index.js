@@ -33,6 +33,7 @@ export default class SelectPayment extends Component {
           applePayHandler={this.props.applePayHandler}
           enableApplePay={this.props.enableApplePay}
           styles={styles}
+          selectedId={this.props.selectedId}
         />
         <TouchableOpacity style={styles.addButton} styles={styles} onPress={() => this.props.addCardHandler()} last>
           <Text style={styles.addButtonText}>{this.props.addNewCardText}</Text>

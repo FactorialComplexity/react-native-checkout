@@ -14,6 +14,7 @@ export default class PaymentMethods extends Component {
           styles={this.props.styles}
           last={_.last(this.props.paymentSources) === paymentSource}
           key={i}
+          selected={this.props.selectedId === paymentSource.id}
         />
       )
     })
