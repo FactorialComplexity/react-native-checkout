@@ -35,9 +35,12 @@ export default class SelectPayment extends Component {
           styles={styles}
           selectedId={this.props.selectedId}
         />
-        <TouchableOpacity style={styles.addButton} styles={styles} onPress={() => this.props.addCardHandler()} last>
-          <Text style={styles.addButtonText}>{this.props.addNewCardText}</Text>
-        </TouchableOpacity>
+        { this.props.showAddCardButton ? 
+          <TouchableOpacity style={styles.addButton} styles={styles} onPress={() => this.props.addCardHandler()} last>
+            <Text style={styles.addButtonText}>{this.props.addNewCardText}</Text>
+          </TouchableOpacity>
+          : null
+        }
       </View>
     )
   }
